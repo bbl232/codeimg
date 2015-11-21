@@ -1,0 +1,168 @@
+.tag-btn {
+  margin-top: 15px;
+}
+
+.active-tag {
+  font-weight: bold;
+}
+
+.tag-btn.active{
+  border-color:black;
+}
+
+.tag-btn:hover{
+  background-color:white;
+}
+
+.tag-btn.active:hover{
+  background-color:#e6e6e6;
+}
+
+.viewdiv {
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.viewdiv a {
+  bottom:10px;
+}
+
+.tag-btn:focus{
+  outline:0 !important;
+  background-color:#EDEDED;
+}
+.tag-btn.active:focus{
+  outline:0 !important;
+  background-color:#EDEDED;
+}
+
+.code-panel{
+  margin-top:15px;
+}
+
+.citation-example {
+  font-family:monospace;
+  padding-bottom:75px;
+}
+
+#code-image-div {
+  text-align:left;
+}
+
+#faq, #errors{
+  list-style-type: none;
+  list-style-position: inside;
+  padding-left:0;
+  text-align:left;
+}
+
+#mainabout {
+  text-align:left;
+}
+
+#mainabout p{
+  padding-left:2%;
+}
+
+#errors .alert{
+  padding-top:2%;
+  margin-top:5%;
+}
+
+#faq h5, #errors h5{
+  padding-left:2%;
+  /*padding-top:1%;*/
+}
+
+#faq p, #errors p{
+  padding-left:3%;
+}
+
+.tag-toggle{
+  margin-right: 5px;
+  padding:30px;
+}
+
+.snippet-container{
+  /*float:left;*/
+}
+
+#notes{
+  resize:none;
+}
+
+#code {
+  height:auto;
+}
+
+#codegroupdiv {
+/*  height:50%;*/
+}
+
+#codegroup {
+  height:auto;
+}
+
+#imgify {
+  font-size: 35px;
+}
+
+#message {
+  text-align: center;
+  margin-top: 5px;
+}
+
+#findcodesteps, #sharecodesteps {
+  text-align:center;
+}
+
+#findcodesteps p, #sharecodesteps p{
+  text-align:left;
+}
+
+#findcodesteps h4, #sharecodesteps h4{
+  text-align:left;
+}
+
+.stepimg {
+  max-width:75%;
+  margin-bottom:20px;
+  border-color: black;
+  border-width:1px;
+  border-style:dotted;
+  border-radius:5px;
+  max-height:300px;
+  overflow:hidden;
+}
+
+.main_form{
+  text-align: center;
+}
+
+.input-group {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.main_form form{
+  height: 100%;
+}
+
+.contentpane {
+  height: 100%;
+  min-height: 400px;
+  text-align: center;
+}
+
+#main {
+  height: 100%;
+}
+
+body { 
+  text-align: center;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
