@@ -10,7 +10,8 @@
   3. converge the machine using the run list. chef will take care of the rest
 
 ###Configuring without chef-solo
-  1. install dependencies
+  1. install dependencies 
+  
   ```
     sudo apt-get install apache2 libapache2-mod-php5 rake php5-cli php5-json php5-ldap php5-gd php5-mysql php5-mysqlnd mysql-client mysql-server libfreetype6-dev libfreetype6
     sudo gem install highline
@@ -19,6 +20,7 @@
     - `AllowOverride` All needs to be enabled
     - The site should make use of SSL
   3. set up the database
+  
   ```
     mysql --defaults-file=/etc/mysql/debian.cnf -e "CREATE DATABASE codeimg;"
     mysql --defaults-file=/etc/mysql/debian.cnf codeimg < codeimg/SCHEMA.sql
@@ -27,6 +29,7 @@
   4. Trust your LDAP cert if you're using self-signed
     1. add your LDAP cert to `/etc/ldap/certs/cert.pem`
     2. configure LDAP to trust this cert by adding this to the end of `/etc/ldap/ldap.conf`
+    
     ```
     TLS_REQCERT never
     TLS_CACERT /etc/ldap/certs/cert.pem
