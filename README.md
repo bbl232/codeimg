@@ -1,12 +1,10 @@
-CODEIMG SYSTEM
+=CODEIMG SYSTEM
 
-Dependencies
--=-=-=-=-=-=
+==Dependencies
   - chef-solo
   - ubuntu server 14.04 LTS
 
-Configuring
--=-=-=-=-=-
+==Configuring
   clone repository to an ubuntu server with chef-solo installed
   set the run list to "recipe[codeimg]"
   converge the machine using the run list. chef will take care of the rest
@@ -16,8 +14,7 @@ Configuring
 
   The database schema can be found in SCHEMA.sql and needs to be applied to a MySQL databse that this system will point to (configurable via rake)
 
-Testing
--=-=-=-
+==Testing
   Install vagrant (vagrantup.com)
   Install VirtualBox (virtualbox.org)
 
