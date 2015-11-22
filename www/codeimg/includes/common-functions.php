@@ -1,5 +1,5 @@
 <?php
-  include_once("../../config/config.php");
+  include_once("../config/config.php");
 
   function clean_tags(&$array){
     #Thanks http://stackoverflow.com/users/58088/tyler-carter
@@ -48,7 +48,7 @@
       //session is still good!
       $ldap = ldap_connect($server, $port);
       ldap_start_tls($ldap);
-      if(ldap_bind($ldap, "uid=".$_SESSION['username'].",ou=People,dc=socs,dc=uoguelph,dc=ca", $_SESSION['password'])){
+      if(ldap_bind($ldap, "uid=".$_SESSION['username'].",".LDAP_BASEDN, $_SESSION['password'])){
         //if session username and password are valid
         $_SESSION['lastaction'] = time();
         return $ldap;

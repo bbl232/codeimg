@@ -82,7 +82,7 @@ function imgify(){
     }
 
 
-    req.open("POST","/codeimg/api/image/transform");
+    req.open("POST","/api/image/transform");
     req.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 
     req.send(postData);

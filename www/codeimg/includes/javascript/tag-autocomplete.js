@@ -1,5 +1,5 @@
   $(function() {
-    $.post("/codeimg/api/tags",{limit:2000}).success(function(data){
+    $.post("/api/tags",{limit:2000}).success(function(data){
     var json = $.parseJSON(data);
     var availableTags = json["tags"];
     function split( val ) {

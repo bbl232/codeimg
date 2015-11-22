@@ -1,4 +1,4 @@
-$.post('/codeimg/api/tags',{limit:8}).success(function(data){
+$.post('/api/tags',{limit:8}).success(function(data){
   var tags = $.parseJSON(data);
   tags = tags["tags"];
   $.each(tags,function(k,v){
@@ -26,7 +26,7 @@ function update_results(){
     }
   });
   if(tags.length > 0){
-    $.post('/codeimg/api/snippet/from-tags',"tags="+tags.toString(),function(data){
+    $.post('/api/snippet/from-tags',"tags="+tags.toString(),function(data){
       var result = $.parseJSON(data);
       if(result['status'] == "error"){
         $('#message').html("<br><div class='alert alert-danger'>"+result['message']+"</div>");;

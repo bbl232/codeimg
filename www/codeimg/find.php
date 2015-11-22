@@ -3,8 +3,8 @@ require("includes/common-functions.php");
 $ldap = ensure_auth('find.php');
 require("includes/header.php");
 ?>
-<link href="/codeimg/includes/css/autocomplete-jquery-bootstrap.css" rel="stylesheet">
-<link href="/codeimg/includes/css/jquery-ui.min.css" rel="stylesheet">
+<link href="/includes/css/autocomplete-jquery-bootstrap.css" rel="stylesheet">
+<link href="/includes/css/jquery-ui.min.css" rel="stylesheet">
 <style>
   .ui-autocomplete {
     max-height: 100px;
@@ -44,10 +44,10 @@ require("includes/header.php");
 <?php
 require("includes/footer.php");
 ?>
-<script src="/codeimg/includes/javascript/jquery-ui.min.js"></script>
-<script src="/codeimg/includes/javascript/jquery.ui.autocomplete.html.js"></script>
-<script src="/codeimg/includes/javascript/tag-autocomplete.js"></script>
-<script src="/codeimg/includes/javascript/custom-imgify.js"></script>
-<script src='/codeimg/includes/javascript/custom-search.js' type='text/javascript'></script>
+<script src="/includes/javascript/jquery-ui.min.js"></script>
+<script src="/includes/javascript/jquery.ui.autocomplete.html.js"></script>
+<script src="/includes/javascript/tag-autocomplete.js"></script>
+<script src="/includes/javascript/custom-imgify.js"></script>
+<script src='/includes/javascript/custom-search.js' type='text/javascript'></script>
 </body>
 </html>

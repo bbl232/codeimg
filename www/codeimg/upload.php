@@ -21,8 +21,8 @@ if(isset($_GET['id']) && $_GET['id'] != ""){
   }
 }
 ?>
-<link href="/codeimg/includes/css/autocomplete-jquery-bootstrap.css" rel="stylesheet">
-<link href="/codeimg/includes/css/jquery-ui.min.css" rel="stylesheet">
+<link href="/includes/css/autocomplete-jquery-bootstrap.css" rel="stylesheet">
+<link href="/includes/css/jquery-ui.min.css" rel="stylesheet">
 
 <style>
   .ui-autocomplete {
@@ -81,9 +81,9 @@ if(isset($_GET['id']) && $_GET['id'] != ""){
 <?php
 require('includes/footer.php');
 ?>
-<script src="/codeimg/includes/javascript/jquery-ui.min.js"></script>
-<script src="/codeimg/includes/javascript/jquery.ui.autocomplete.html.js"></script>
-<script src="/codeimg/includes/javascript/tag-autocomplete.js"></script>
-<script src="/codeimg/includes/javascript/custom-imgify.js"></script>
+<script src="/includes/javascript/jquery-ui.min.js"></script>
+<script src="/includes/javascript/jquery.ui.autocomplete.html.js"></script>
+<script src="/includes/javascript/tag-autocomplete.js"></script>
+<script src="/includes/javascript/custom-imgify.js"></script>
 </body>
 </html>

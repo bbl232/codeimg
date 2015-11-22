@@ -9,8 +9,8 @@
     <title>Code Imgifier</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/codeimg/includes/css/bootstrap.css" rel="stylesheet">
-    <link href="/codeimg/includes/css/custom-imgify.css" rel="stylesheet">
+    <link href="/includes/css/bootstrap.css" rel="stylesheet">
+    <link href="/includes/css/custom-imgify.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
