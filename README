@@ -1,0 +1,12 @@
+CODEIMG SYSTEM
+
+Dependencies
+-=-=-=-=-=-=
+  - rake
+  - php5
+  - libmysql-php5
+
+Configuring
+-=-=-=-=-=-
+
+run `rake` to 

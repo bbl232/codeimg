@@ -9,7 +9,7 @@ end
 
 hintsfile = ENV['RENDER_HINTS'] || File.join(File.dirname(__FILE__), 'config/defaultrenderhints.yml')
 
-task :sync do
+task :default do
   Rake::Task[:render_files].invoke("true")
 end
 
