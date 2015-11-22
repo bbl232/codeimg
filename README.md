@@ -43,4 +43,4 @@
 3. run `vagrant up`
   - This will set up a virtual test environment to be used with the codeimg system.
   - Chef will configure the virtual machine.
-  - You can test the system by browsing to localhost:8080 on your machine.
+  - You can test the system by browsing to [localhost:8080](localhost:8080) on your machine.
