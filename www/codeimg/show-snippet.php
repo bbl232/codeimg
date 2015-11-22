@@ -8,7 +8,7 @@ if(!isset($_GET['id']) || $_GET['id'] == ""){
   die();
 }
 else{
-  $snippet = json_decode(file_get_contents("https://vandenberk.me/codeimg/api/snippet/from-id?id=".$_GET['id']),true);
+  $snippet = json_decode(file_get_contents(FQDN."/api/snippet/from-id?id=".$_GET['id']),true);
   if($snippet['status'] == "success"){
     $snippet = $snippet['snippet'];
   }

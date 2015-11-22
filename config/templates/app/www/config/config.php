@@ -4,6 +4,6 @@ define("LDAP_PORT",<%= ldap_port %>);
 define("LDAP_BASEDN","<%= ldap_basedn %>");
 
 define("BASE_HOSTNAME","<%= site_hostname %>");
-define("FQDN","https:".BASE_HOSTNAME);
+define("FQDN","<%= fqdn_protocol %>://".BASE_HOSTNAME);
 ?>
 

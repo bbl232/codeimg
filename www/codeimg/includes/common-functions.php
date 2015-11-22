@@ -1,5 +1,5 @@
 <?php
-  include_once("../config/config.php");
+  include_once(dirname(__FILE__)."/../..//config/config.php");
 
   function clean_tags(&$array){
     #Thanks http://stackoverflow.com/users/58088/tyler-carter
@@ -29,7 +29,7 @@
     get_session();
     if(isset($_GET['logout'])){
         unset($_SESSION['lastaction'], $_SESSION['username'], $_SESSION['password']);
-        header("Location: pleaseLogin.php?next_page=".$next_page);
+        header("Location: /pleaseLogin.php?next_page=".$next_page);
         exit;
     }
   }
@@ -56,7 +56,7 @@
       else{
         //otherwise end the session
         unset($_SESSION['lastaction'], $_SESSION['username'], $_SESSION['password']);
-        header("Location: pleaseLogin.php?next_page=".$next_page);
+        header("Location: /pleaseLogin.php?next_page=".$next_page);
         exit;
       }
     }
@@ -73,14 +73,14 @@
       }
       else{
         //invalid login info
-        header("Location: pleaseLogin.php?next_page=".$next_page);
+        header("Location: /pleaseLogin.php?next_page=".$next_page);
         exit;
       }
     }
     else{
       //session has or is being expired
       unset($_SESSION['lastaction'], $_SESSION['username'], $_SESSION['password']);
-      header("Location: pleaseLogin.php?next_page=".$next_page);
+      header("Location: /pleaseLogin.php?next_page=".$next_page);
       exit;
     }
   }

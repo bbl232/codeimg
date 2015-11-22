@@ -10,7 +10,7 @@ require("includes/header.php");
 
 <?php
 if(isset($_SESSION['username']) && $_SESSION['username'] != ""){
-  $snippet = json_decode(file_get_contents("https://vandenberk.me/codeimg/api/snippet/from-owner?owner=".$_SESSION['username']),true);
+  $snippet = json_decode(file_get_contents(FQDN."/api/snippet/from-owner?owner=".$_SESSION['username']),true);
   if($snippet['status'] == "success"){
     $snippet = $snippet['snippets'];
     
@@ -52,4 +52,4 @@ else{
 <?php
 require("includes/footer.php");
 ?>
-<script src='/codeimg/includes/javascript/custom-user-snippets.js' type='text/javascript'></script>
+<script src='/includes/javascript/custom-user-snippets.js' type='text/javascript'></script>

@@ -30,3 +30,6 @@ database:
   prompt: Database name
   default: "codeimg"
 
+fqdn_protocol:
+  prompt: FQDN Protocol (should be https)
+  default: "https"
