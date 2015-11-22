@@ -4,9 +4,25 @@ Dependencies
 -=-=-=-=-=-=
   - rake
   - php5
-  - libmysql-php5
+  - php5-cgi
+  - php5-json
+  - php5-ldap
+  - php5-gd
+  - php5-mysql
+  - mysql
+  - ruby
+  - highline (ruby gem)
 
 Configuring
 -=-=-=-=-=-
 
-run `rake` to 
+  run `rake` to automatically fill in conifguration files with required values
+
+Testing
+-=-=-=-
+  Install vagrant (vagrantup.com)
+  Install VirtualBox (virtualbox.org)
+
+  run `vagrant up`
+
+  This will set up a virtual test environment to be used with the codeimg system

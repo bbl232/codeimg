@@ -4,11 +4,9 @@ web_app "codeimg.me" do
   server_name "localhost"
   server_aliases ["*"]
   docroot "/vagrant/www"
-  cookbook "vandenberk"
+  cookbook "codeimg"
 end
 
-package "php5-cli"
-package "libapache2-mod-php5"
-package "libfreetype6"
-package "libfreetype6-dev"
-package "php5-gd"
+%w(libapache2-mod-php5 php5 php5-cgi php5-cli php5-json php5-ldap php5-gd php5-mysql mysql-server libfreetype6-dev libfreetype6).each |p| do
+   package p
+end
