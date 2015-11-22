@@ -1,0 +1,32 @@
+ldap_server:
+  prompt: LDAP Auth Server Address
+  default: "fluffy.socs.uoguelph.ca"
+
+ldap_port:
+  prompt: LDAP Auth Server port
+  default: "389"
+
+ldap_basedn:
+  prompt: LDAP Auth Server BaseDN
+  default: "ou=People,dc=socs,dc=uoguelph,dc=ca"
+
+site_hostname:
+  prompt: Site hostname
+  default: "codeimg.me"
+
+db_address:
+  prompt: MySQL DB server address
+  default: "127.0.0.1"
+
+username:
+  prompt: Database username
+  default: "codeimg"
+
+password:
+  prompt: Database password
+  default: "codeimg"
+
+database:
+  prompt: Database name
+  default: "codeimg"
+

@@ -13,9 +13,8 @@ task :sync do
   Rake::Task[:render_files].invoke("true")
 end
 
-task :render_files, [:use_default] do |t, args|
-  args.with_defaults(:use_default => "true")
-  binding = InteractiveBinding.new(hintsfile, args.use_default).get_binding
+task :render_files do |t, args|
+  binding = InteractiveBinding.new(hintsfile, false).get_binding
   projects = RenderFiles.find_projects(File.dirname(__FILE__))
 
   projects.each do |project|

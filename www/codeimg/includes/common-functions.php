@@ -64,7 +64,7 @@
       //this is a new login
       $ldap = ldap_connect($server, $port);
       ldap_start_tls($ldap);
-      if(ldap_bind($ldap, "uid=".$_POST['username'].",ou=People,dc=socs,dc=uoguelph,dc=ca", $_POST['password'])){
+      if(ldap_bind($ldap, "uid=".$_POST['username'].",".LDAP_BASEDN, $_POST['password'])){
         //if password username and password are valid
         $_SESSION['lastaction'] = time();
         $_SESSION['username'] = $_POST['username'];

@@ -40,7 +40,7 @@ function get_snippets($owner){
 }
 
 function main(){
-  if($_SERVER['REMOTE_ADDR'] != "127.0.0.1" && $_SERVER['REMOTE_ADDR'] != "192.241.183.27"){
+  if($_SERVER['REMOTE_ADDR'] != "127.0.0.1" && $_SERVER['REMOTE_ADDR'] != $_SERVER['SERVER_ADDR']){
     echo json_encode(array("status" => "error", "message" => "This is a private API endpoint... Your ip: ".$_SERVER['REMOTE_ADDR']));
     die();
   }
