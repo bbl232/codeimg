@@ -37,7 +37,7 @@
     3. ensure that the cert is readable by apache
   5. run `rake` to fill in templated files used by the project, using defaults and overriding where neccesary
 
-##Testing
+##Testing & Development
 1. Install [Vagrant](vagrantup.com)
 2. Install [VirtualBox](virtualbox.org)
 3. run `vagrant up`
