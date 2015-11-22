@@ -13,8 +13,8 @@
   1. install dependencies 
   
   ```
-  sudo apt-get install apache2 libapache2-mod-php5 rake php5-cli php5-json php5-ldap php5-gd php5-mysql php5-mysqlnd mysql-client mysql-server libfreetype6-dev libfreetype6
-  sudo gem install highline
+  # apt-get install apache2 libapache2-mod-php5 rake php5-cli php5-json php5-ldap php5-gd php5-mysql php5-mysqlnd mysql-client mysql-server libfreetype6-dev libfreetype6
+  # gem install highline
   ```
   2. add a site file to apache that points to the `www/codeimg` directory as the docroot
     - `AllowOverride` All needs to be enabled
@@ -22,9 +22,9 @@
   3. set up the database
   
   ```
-  mysql --defaults-file=/etc/mysql/debian.cnf -e "CREATE DATABASE codeimg;"
-  mysql --defaults-file=/etc/mysql/debian.cnf codeimg < codeimg/SCHEMA.sql
-  mysql --defaults-file=/etc/mysql/debian.cnf -e "GRANT ALL ON codeimg.* to 'codeimg'@'127.0.0.1' IDENTIFIED BY 'codeimg';" 
+  # mysql --defaults-file=/etc/mysql/debian.cnf -e "CREATE DATABASE codeimg;"
+  # mysql --defaults-file=/etc/mysql/debian.cnf codeimg < codeimg/SCHEMA.sql
+  # mysql --defaults-file=/etc/mysql/debian.cnf -e "GRANT ALL ON codeimg.* to 'codeimg'@'127.0.0.1' IDENTIFIED BY 'codeimg';" 
   ```
   4. Trust your LDAP cert if you're using self-signed
     1. add your LDAP cert to `/etc/ldap/certs/cert.pem`
