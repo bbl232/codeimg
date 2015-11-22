@@ -1,0 +1,32 @@
+{
+  "name": "codeimg",
+  "description": "A fabulous new cookbook",
+  "long_description": "",
+  "maintainer": "Bill Vandenberk",
+  "maintainer_email": "bill@vandenberk.me",
+  "license": "none",
+  "platforms": {
+  },
+  "dependencies": {
+    "apache2": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "1.0.0",
+  "source_url": "",
+  "issues_url": ""
+}
